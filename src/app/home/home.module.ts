@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component'
 import { HeaderModule } from '../componentes/header/header.module';
-import { NbCardModule, NbLayoutModule } from '@nebular/theme';
+import { NbCardModule, NbLayoutModule, NbSidebarModule } from '@nebular/theme';
+import { FooterModule } from '../componentes/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,10 @@ import { NbCardModule, NbLayoutModule } from '@nebular/theme';
     CommonModule,
     HomeRoutingModule,
     HeaderModule,
+    FooterModule,
     NbCardModule,
-    NbLayoutModule
+    NbLayoutModule,
+    NbSidebarModule
   ],
   exports: [HomeComponent]
 })

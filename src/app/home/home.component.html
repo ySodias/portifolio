@@ -2,47 +2,40 @@
   <nb-layout-header>
     <app-header></app-header>
   </nb-layout-header>
-  <nb-layout-column></nb-layout-column>
   <nb-layout-column>
-    <nb-flip-card>
-      <nb-card-front>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2"*ngFor="let img of listImg, let i = index">
+        <nb-flip-card>
+          <nb-card-front>
+            <nb-card class="card-flip">
+              <nb-card-body>
+                <img src="{{img.img}}" class="img-fluid" alt="Fotos de Yuri">
+              </nb-card-body>
+            </nb-card>
+          </nb-card-front>
+          <nb-card-back>
+            <nb-card>
+              <nb-card-body>
+                <p>{{img.text}}</p>
+              </nb-card-body>
+            </nb-card>
+          </nb-card-back>
+        </nb-flip-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
         <nb-card>
           <nb-card-body>
-            <img src="../../assets/com_minha_mae.jpeg" class="img-fluid" width="300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti autem incidunt, rem quo, quod explicabo laboriosam velit minima molestias atque accusamus, voluptatum ullam labore porro consectetur optio perferendis expedita. Sequi.
           </nb-card-body>
         </nb-card>
-      </nb-card-front>
-      <nb-card-back>
-        <nb-card>
-          <nb-card-body>
-            <div class="d-flex">
-              <p class="text-justify">Gosta de curtir momentos em família, especialmente ao lado de sua mãe, sua principal fonte de inspiração.</p>
-            </div> 
-          </nb-card-body>
-        </nb-card>
-      </nb-card-back>
-    </nb-flip-card>
+      </div>
+    </div>
   </nb-layout-column>
-  <nb-layout-column>
-    <nb-flip-card>
-      <nb-card-front>
-        <nb-card>
-          <nb-card-body>
-            <img src="../../assets/tocando_violino.jpeg" class="img-fluid" width="300">
-          </nb-card-body>
-        </nb-card>
-      </nb-card-front>
-      <nb-card-back>
-        <nb-card>
-          <nb-card-body>
-            <div class="d-flex">
-              <p class="text-justify">Uma das maiores alegrias que tenho é poder dizer que sou músico, pois para chegar onde cheguei batalhei muito e pretendo continuar batalhando para me tornar um músico cada vez melhor.</p>
-            </div> 
-          </nb-card-body>
-        </nb-card>
-      </nb-card-back>
-    </nb-flip-card>
-  </nb-layout-column>
-  <nb-layout-column></nb-layout-column>
-
+  <nb-layout-footer>
+    <app-footer></app-footer>
+  </nb-layout-footer>
 </nb-layout>

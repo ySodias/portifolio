@@ -6,3 +6,10 @@
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+@media screen and (min-width: 1980px) {
+  nb-flip-card{
+    width: 360px !important;
+    height: 400px !important;
+    padding-left: 100px;
+  }
+}

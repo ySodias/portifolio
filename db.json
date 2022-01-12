@@ -1,0 +1,24 @@
+{
+  "img": [
+    {
+      "id": 1,
+      "img": "https://i.imgur.com/VTltlXq.jpg",
+      "text": "Família"
+    },
+    {
+      "id": 2,
+      "img": "https://i.imgur.com/jFZZagc.jpg",
+      "text": "Música"
+    },
+    {
+      "id": 3,
+      "img": "https://imgur.com/9zrMDQw.jpg",
+      "text": "Viajem"
+    },
+    {
+      "id": 5,
+      "img": "https://imgur.com/eVCXsha.jpg",
+      "text": "Jogos e Filmes"
+    }
+  ]
+}
